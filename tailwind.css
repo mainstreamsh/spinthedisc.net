@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    font-family: monospace;
+  }
+}
+
 .paginator-text {
   @apply text-gray-600 font-bold py-2 px-4;
 }

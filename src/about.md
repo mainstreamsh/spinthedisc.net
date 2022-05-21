@@ -1,6 +1,6 @@
 ---
 layout: default
-title: This is me.
+title: Wat.jpg
 ---
 
-She/her. A software person. Singapore.
+Random musings

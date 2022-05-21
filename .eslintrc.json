@@ -26,6 +26,7 @@
             "error",
             "never"
         ],
+        "no-empty": "off",
         "array-element-newline": ["error", {
             "ArrayExpression": "consistent",
             "ArrayPattern": { "minItems": 3 }
