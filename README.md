@@ -20,7 +20,6 @@ This is forked from [Rong Ying's starter](https://github.com/kohrongying/11ty-bl
 
 - Create excerpts using the `<!-- excerpt -->`
 
-- Custom ReadTime filter
 
 - 404 page
 

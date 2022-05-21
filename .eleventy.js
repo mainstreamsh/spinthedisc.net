@@ -21,13 +21,13 @@ module.exports = function(eleventyConfig) {
     excerpt_separator: '<!-- excerpt -->'
   })
 
-  // To create a filter to determine duration of post
-  eleventyConfig.addFilter('readTime', (value) => {
-    const content = value
-    const textOnly = content.replace(/(<([^>]+)>)/gi, '')
-    const readingSpeedPerMin = 450
-    return Math.max(1, Math.floor(textOnly.length / readingSpeedPerMin))
-  })
+  // // To create a filter to determine duration of post
+  // eleventyConfig.addFilter('readTime', (value) => {
+  //   const content = value
+  //   const textOnly = content.replace(/(<([^>]+)>)/gi, '')
+  //   const readingSpeedPerMin = 450
+  //   return Math.max(1, Math.floor(textOnly.length / readingSpeedPerMin))
+  // })
 
   // filter to format post date to year-month-day
   eleventyConfig.addFilter("postDate", (dateObj) => {
