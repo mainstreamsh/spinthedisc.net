@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="utf-8">
   	<meta name='viewport' content='width=device-width'>
@@ -21,7 +21,7 @@
     <link href="/assets/styles/tailwind.css" rel="stylesheet" />
     <link href="/assets/styles/index.css" rel="stylesheet" />
     {# <script data-goatcounter="https://stats.httpster.io/count" async src="//stats.httpster.io/count.js"></script> #}
-    <script>
+    {# <script>
       const isDarkMode = () => localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: light)').matches);
       console.log(localStorage.theme);
       if (isDarkMode()) {
@@ -29,12 +29,12 @@
       } else {
         document.documentElement.classList.remove('dark')
       }
-    </script>
+    </script> #}
   </head>
 
   <body class="dark:text-white dark:bg-black">
     {{ content | safe }}
-      <script>
+      {# <script>
     document.getElementById("toggleDarkMode").addEventListener("click", function () {
       if (isDarkMode()) {
         localStorage.theme = 'light'
@@ -45,7 +45,7 @@
         document.documentElement.classList.add('dark')
         console.log(localStorage.theme + " press");
       }
-    });
+    }); #}
   </script>
   </body>
 </html>

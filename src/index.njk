@@ -1,22 +1,22 @@
 ---
 layout: default
-title: mainstream.sh
-subtitle: 主流の
+title: Mainstream Sheep Records
+subtitle: 主流の 羊 誌
 pagination:
   data: collections.posts
-  size: 5
+  size: 60
   reverse: true
   alias: posts
 ---
 
 {% for post in pagination.items %}
 {% if post.data.published %}
-<div class="py-4">
+<div class="py-8">
   <p>
     <span class="text-2xl sm:text-4xl font-bold hover:text-blue-700 leading-tight"><a href="{{ post.url }}">{{ post.data.title }}</a></span>
   </p>
   <em>{{ post.date | postDate }}</em>
-  {% if post.data.excerpt %}<p class="mt-4 font-light leading-10">{{ post.data.excerpt }}...</p>{% endif %}
+  {% if post.data.excerpt %}<p class="mt-4 font-light leading-10">{{ post.data.excerpt }}</p>{% endif %}
   
   <div class="flex justify-between items-center mt-4">
     <div class="flex-1 pr-4">
@@ -29,13 +29,12 @@ pagination:
       {% endfor %}
     </div>
 
-    <a class="flex-none hover:underline font-semibold text-blue-700" href="{{ post.url }}">Read this post &rarr;</a>
+    <a class="flex-none hover:underline font-semibold text-blue-700" href="{{ post.url }}">Check it out &rarr;</a>
   </div>
 
 </div>
 
 {% endif %}
 {% endfor %}
-
 
 {% include "paginator.njk" %}
