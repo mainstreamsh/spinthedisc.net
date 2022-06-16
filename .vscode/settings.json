@@ -1,8 +1,2 @@
 {
-  "search.exclude": {
-    "**/_site": true
-  },
-  "files.exclude": {
-    "**/_site": true
-  }
 }
