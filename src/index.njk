@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Mainstream Sheep Records
-subtitle: 主流の 羊 誌
+subtitle:
 pagination:
   data: collections.posts
   size: 60
@@ -9,13 +9,14 @@ pagination:
   alias: posts
 ---
 
+<h1 class="text-4xl pt-4 pb-8 font-medium">Releases</h1>
 {% for post in pagination.items %}
 {% if post.data.published %}
-<div class="py-8">
+<div class="m-4 px-8 py-8 border-2 border-black">
   <p>
     <span class="text-2xl sm:text-4xl font-bold hover:text-blue-700 leading-tight"><a href="{{ post.url }}">{{ post.data.title }}</a></span>
   </p>
-  <em>{{ post.date | postDate }}</em>
+  {{ post.date | postDate }}
   {% if post.data.excerpt %}<p class="mt-4 font-light leading-10">{{ post.data.excerpt }}</p>{% endif %}
   
   <div class="flex justify-between items-center mt-4">
@@ -28,8 +29,6 @@ pagination:
         {% endif %}
       {% endfor %}
     </div>
-
-    <a class="flex-none hover:underline font-semibold text-blue-700" href="{{ post.url }}">Check it out &rarr;</a>
   </div>
 
 </div>

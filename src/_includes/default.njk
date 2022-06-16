@@ -2,7 +2,7 @@
 layout: main
 ---
 {% if subtitle != "" %}
-<p class="md:text-7xl text-5xl font-light tracking-widest pt-10 pb-2 md:pt-20 leading-tight title-animated">
+<p class="md:text-6xl text-5xl font-light tracking-widest pt-10 pb-2 md:pt-20 leading-tight title-animated">
  {{ title }}
 </p>
 <p class="md:text-7xl text-5xl font-thin tracking-widest pb-10 md:pb-20 leading-tight title-animated">
@@ -18,4 +18,6 @@ layout: main
 
 {% include "nav.njk" %}
 
-{{ content | safe}}
+<div class="prose prose-xl prose-main dark:prose-invert hover:prose-a:text-red-600 leading-loose pb-36">
+  {{ content | safe }}
+</div>

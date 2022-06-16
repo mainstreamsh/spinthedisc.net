@@ -1,6 +1,6 @@
 module.exports = {
   darkMode: 'class',
-  content: ['./src/**/*.md', './src/**/*.html', './src/_includes/**/*.njk'],
+  content: ['./src/**/*.md', './src/**/*.html', './src/_includes/**/*.njk', './src/index.njk'],
   plugins: [
     require('@tailwindcss/typography')
   ],
@@ -8,6 +8,15 @@ module.exports = {
     fontFamily: {
       'mono': ['supply', 'Segoe UI', 'Arial'],
       'serif': ['Segoe UI', 'Helvetica', 'Arial']
+    },
+    typography: {
+      default: {
+        css: {
+          a: {
+            textDecoration: false,
+          },
+        },
+      },
     },
 
     extend: {
