@@ -1,4 +1,4 @@
-Sitemap: https://mainstream.sh/sitemap.xml
+Sitemap: https://spinthedisc.net/sitemap.xml
 
 User-agent: *
 Disallow:
