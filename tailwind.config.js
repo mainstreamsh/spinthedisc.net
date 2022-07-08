@@ -9,6 +9,12 @@ module.exports = {
       'mono': ['supply', 'Segoe UI', 'Arial'],
       'serif': ['Segoe UI', 'Helvetica', 'Arial']
     },
+    screens: {
+      'sm': '840px',
+      'md': '960px',
+      'lg': '1024px',
+      'xl': '1440px'
+    },
     typography: {
       default: {
         css: {

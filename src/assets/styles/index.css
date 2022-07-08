@@ -10,6 +10,10 @@ h2 > a.header-anchor {
   font-weight: 700;
 }
 
+.img-cover {
+  width:100%
+}
+
 .title-animated {
   animation: title-animation 1.6s infinite;
   animation-direction: alternate;

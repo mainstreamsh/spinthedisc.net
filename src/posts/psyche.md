@@ -2,6 +2,7 @@
 title: Psyche I — Compilation
 date: 2015-04-16
 excerpt: Soulful compilation album
+cover: psyche
 tags:
 - Compilation
 - Album

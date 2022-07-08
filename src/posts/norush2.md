@@ -2,6 +2,7 @@
 title: No Rush — Holding Patterns
 date: 2018-01-15
 excerpt: Deep and moody futurebass
+cover: norush2
 tags:
 - EP
 - Future Bass

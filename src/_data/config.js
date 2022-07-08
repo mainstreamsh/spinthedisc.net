@@ -1,7 +1,6 @@
 module.exports = {
   name: "https",
-  title: "mainstream.sh",
+  title: "Spin the Disc",
   description: "yo",
   url: "https://mainstream.sh",
-  paginationSize: 6
 };

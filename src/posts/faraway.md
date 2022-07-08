@@ -2,6 +2,7 @@
 title: Sulohaara — Under the Faraway Sky
 date: 2014-04-14
 excerpt: Interesting to say the least
+cover: faraway
 tags:
 - EP
 - Trance

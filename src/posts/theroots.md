@@ -2,6 +2,7 @@
 title: Alajarvela — The Roots
 date: 2012-11-17
 excerpt: Psytrance with an Indian twist
+cover: theroots
 tags:
 - EP
 - Psytrance

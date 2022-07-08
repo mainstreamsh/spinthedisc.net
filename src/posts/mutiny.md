@@ -2,6 +2,7 @@
 title: Pompeius — Mutiny
 date: 2015-03-09
 excerpt: A collection of four water-logged songs.
+cover: mutiny
 tags:
 - EP
 - Downtempo

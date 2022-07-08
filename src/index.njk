@@ -1,18 +1,21 @@
 ---
 layout: default
-title: Mainstream Sheep Records
-subtitle:
+title: Spin the Disc
+subtitle: Music from the soul
 pagination:
   data: collections.posts
-  size: 60
+  size: 9
   reverse: true
   alias: posts
 ---
 
-<h1 class="text-4xl pt-4 pb-8 font-medium">Releases</h1>
 {% for post in pagination.items %}
+
 {% if post.data.published %}
-<div class="m-4 px-8 py-8 border-2 border-black">
+{% if post.data.cover %}
+<div class="m-4 pb-8 border-2 border-black">
+<img src="/assets/img/{{post.data.cover}}.jpg" class="img-cover">
+
   <p>
     <span class="text-2xl sm:text-4xl font-bold hover:text-blue-700 leading-tight"><a href="{{ post.url }}">{{ post.data.title }}</a></span>
   </p>
@@ -33,7 +36,31 @@ pagination:
 
 </div>
 
+{% else %}
+<div class="m-4 px-8 py-8 border-2 border-black">
+  {% if post.data.cover %}
+  <img src="/assets/img/{{post.data.cover}}.jpg">
+  {% endif %}
+  <p>
+    <span class="text-2xl sm:text-4xl font-bold hover:text-blue-700 leading-tight"><a href="{{ post.url }}">{{ post.data.title }}</a></span>
+  </p>
+  {{ post.date | postDate }}
+  {% if post.data.excerpt %}<p class="mt-4 font-light leading-10">{{ post.data.excerpt }}</p>{% endif %}
+  
+  <div class="flex justify-between items-center mt-4">
+    <div class="flex-1 pr-4">
+      {% for tag in post.data.tags %}
+        {% if tag != "posts" %}
+          <a href="/tags/{{ tag }}" class="">
+            <div class="post-tag">{{ tag }}</div>
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+</div>
+{% endif %}
+
 {% endif %}
 {% endfor %}
-
-{% include "paginator.njk" %}

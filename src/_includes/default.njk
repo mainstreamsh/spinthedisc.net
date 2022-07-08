@@ -1,23 +1,25 @@
 ---
 layout: main
 ---
+{% include "nav.njk" %}
 {% if subtitle != "" %}
-<p class="md:text-6xl text-5xl font-light tracking-widest pt-10 pb-2 md:pt-20 leading-tight title-animated">
+<h1 class="xl:text-9xl sm:text-7xl text-5xl font-medium tracking-normal pt-4 pb-4 xl:pb-6 leading-tight text-center">
  {{ title }}
-</p>
-<p class="md:text-7xl text-5xl font-thin tracking-widest pb-10 md:pb-20 leading-tight title-animated">
+</h1>
+<h2 class="xl:text-7xl sm:text-5xl text-3xl font-light tracking-widest pb-8 xl:pb-16 leading-tight text-center">
  {{ subtitle }}
-</p>
+</h2>
 
 {% else %}
-<p class="md:text-7xl text-5xl font-light tracking-wider py-10 md:py-20 leading-tight">
+{# set title without subtitle #}
+<h1 class="">
  {{ title }}
-</p>
+</h1>
 
 {% endif %}
 
-{% include "nav.njk" %}
 
-<div class="prose prose-xl prose-main dark:prose-invert hover:prose-a:text-red-600 leading-loose pb-36">
+<div class="prose prose-xl prose-main dark:prose-invert hover:prose-a:text-red-600 leading-loose pb-12 grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
   {{ content | safe }}
 </div>
+{% include "paginator.njk" %}
