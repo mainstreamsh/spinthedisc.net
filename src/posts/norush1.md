@@ -5,10 +5,6 @@ releasetitle: Intense Depictions of Very Bad Weather
 date: 2015-09-25
 excerpt: Funky futurebass
 cover: norush1
-tags:
-- EP
-- Future Bass
-- Spin the Disc
 ---
 
 {% asset_img 'norush1.jpg' 'No Rush's EP's cover art' %}

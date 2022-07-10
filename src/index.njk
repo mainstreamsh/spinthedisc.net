@@ -31,17 +31,6 @@ pagination:
   {{ post.date | postDate }}
   {% if post.data.excerpt %}<p class="mt-4 font-light leading-10">{{ post.data.excerpt }}</p>{% endif %}
   
-  <div class="flex justify-between items-center mt-4">
-    <div class="flex-1 pr-4">
-      {% for tag in post.data.tags %}
-        {% if tag != "posts" %}
-          <a href="/tags/{{ tag }}" class="">
-            <div class="post-tag">{{ tag }}</div>
-          </a>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
 
 </div>
 {% endif %}

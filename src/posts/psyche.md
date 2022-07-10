@@ -5,11 +5,6 @@ releasetitle: Psyche - Compilation I
 date: 2015-04-16
 excerpt: Soulful compilation album
 cover: psyche
-tags:
-- Compilation
-- Album
-- House
-- Spin the Disc
 ---
 
 {% asset_img 'psyche.jpg' 'Psyche I cover art' %}

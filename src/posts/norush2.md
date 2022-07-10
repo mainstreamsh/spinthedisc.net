@@ -5,10 +5,6 @@ releasetitle: Holding Patterns
 date: 2018-01-15
 excerpt: Deep and moody futurebass
 cover: norush2
-tags:
-- EP
-- Future Bass
-- Spin the Disc
 ---
 
 {% asset_img 'norush2.jpg' 'No Rush's EP's cover art' %}
