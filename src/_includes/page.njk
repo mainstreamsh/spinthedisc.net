@@ -3,7 +3,6 @@ layout: main
 ---
 {% include "nav.njk" %}
 <header>
-{% if subtitle != "" %}
 <h1 class="xl:text-8xl sm:text-7xl text-5xl font-medium tracking-normal pt-4 pb-4 xl:pb-6 leading-tight text-center">
  {{ title }}
 </h1>
@@ -11,14 +10,7 @@ layout: main
  {{ subtitle }}
 </h2>
 
-{% else %}
-<h1 class="xl:text-8xl sm:text-7xl text-5xl font-medium tracking-normal pt-4 pb-4 xl:pb-6 leading-tight text-center">
- {{ title }}
-</h1>
-{% endif %}
-</header>
-
-<section class="prose prose-xl prose-main dark:prose-invert hover:prose-a:text-red-600 leading-loose pb-12 grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+<section class="prose prose-xl prose-main hover:prose-a:text-red-600 leading-loose pb-12 max-w-lg mx-auto">
   {{ content | safe }}
 </section>
 {# {% include "paginator.njk" %} #}

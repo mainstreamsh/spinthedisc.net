@@ -1,5 +1,7 @@
 ---
 title: No Rush — Intense Depictions of Very Bad Weather
+artist: No Rush
+releasetitle: Intense Depictions of Very Bad Weather
 date: 2015-09-25
 excerpt: Funky futurebass
 cover: norush1

@@ -13,36 +13,20 @@ pagination:
 
 {% if post.data.published %}
 {% if post.data.cover %}
-<div class="m-4 pb-8 border-2 border-black">
-<img src="/assets/img/{{post.data.cover}}.jpg" class="img-cover">
 
-  <p>
-    <span class="text-2xl sm:text-4xl font-bold hover:text-blue-700 leading-tight"><a href="{{ post.url }}">{{ post.data.title }}</a></span>
-  </p>
-  {{ post.date | postDate }}
-  {% if post.data.excerpt %}<p class="mt-4 font-light leading-10">{{ post.data.excerpt }}</p>{% endif %}
-  
-  <div class="flex justify-between items-center mt-4">
-    <div class="flex-1 pr-4">
-      {% for tag in post.data.tags %}
-        {% if tag != "posts" %}
-          <a href="/tags/{{ tag }}" class="">
-            <div class="post-tag">{{ tag }}</div>
-          </a>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-
-</div>
+<article class="m-8">
+  <a href="{{ post.url }}">
+    <img src="/assets/img/{{post.data.cover}}.jpg" class="pb-4 img-cover">
+    <time datetime="{{ post.date | postDate }}">{{ post.date | postDate }}</time>
+    <div class="text-2xl font-bold">{{ post.data.artist }}</div>
+    <div class="text-2xl font-normal leading-tight">{{ post.data.releasetitle }}</div>
+  </a>
+</article>
 
 {% else %}
 <div class="m-4 px-8 py-8 border-2 border-black">
-  {% if post.data.cover %}
-  <img src="/assets/img/{{post.data.cover}}.jpg">
-  {% endif %}
   <p>
-    <span class="text-2xl sm:text-4xl font-bold hover:text-blue-700 leading-tight"><a href="{{ post.url }}">{{ post.data.title }}</a></span>
+    <span class="text-2xl sm:text-4xl font-bold hover:text-blue-700 leading-tight"><a href="{{ post.url }}">{{ post.data.artist }}</a></span>
   </p>
   {{ post.date | postDate }}
   {% if post.data.excerpt %}<p class="mt-4 font-light leading-10">{{ post.data.excerpt }}</p>{% endif %}
