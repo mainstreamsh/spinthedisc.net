@@ -10,30 +10,17 @@ pagination:
 ---
 
 {% for post in pagination.items %}
-
 {% if post.data.published %}
-{% if post.data.cover %}
 
 <article class="m-8">
   <a href="{{ post.url }}">
-    <img src="/assets/img/{{post.data.cover}}.jpg" class="pb-4 img-cover">
+    {% if post.data.cover %}
+    <img src="/assets/img/{{post.data.cover}}.jpg" alt="{{post.data.releasetitle}} cover art" class="pb-4 img-cover">
+    {% endif %}
     <time datetime="{{ post.date | postDate }}">{{ post.date | postDate }}</time>
     <div class="text-2xl font-bold">{{ post.data.artist }}</div>
     <div class="text-2xl font-normal leading-tight">{{ post.data.releasetitle }}</div>
   </a>
 </article>
-
-{% else %}
-<div class="m-4 px-8 py-8 border-2 border-black">
-  <p>
-    <span class="text-2xl sm:text-4xl font-bold hover:text-blue-700 leading-tight"><a href="{{ post.url }}">{{ post.data.artist }}</a></span>
-  </p>
-  {{ post.date | postDate }}
-  {% if post.data.excerpt %}<p class="mt-4 font-light leading-10">{{ post.data.excerpt }}</p>{% endif %}
-  
-
-</div>
-{% endif %}
-
 {% endif %}
 {% endfor %}

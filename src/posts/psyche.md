@@ -5,9 +5,13 @@ releasetitle: Psyche - Compilation I
 date: 2015-04-16
 excerpt: Soulful compilation album
 cover: psyche
+tags:
+- Compilation
+- Album
+- House
+- Spin the Disc
 ---
 
-{% asset_img 'psyche.jpg' 'Psyche I cover art' %}
 
 Spin the Disc's debut release is a combined effort between three continents, four countries and nine talented artists to create some sweet, soulful music straight from the heart.
 
