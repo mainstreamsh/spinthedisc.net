@@ -4,7 +4,8 @@ artist: V.A.
 releasetitle: Psyche - Compilation I
 date: 2015-04-16
 excerpt: Soulful compilation album
-cover: psyche
+cover: /posts/psyche/psyche
+thumb: /posts/psyche/psyche-thumb
 tags:
 - Compilation
 - Album

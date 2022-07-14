@@ -15,7 +15,7 @@ pagination:
 <article class="m-8">
   <a href="{{ post.url }}">
     {% if post.data.cover %}
-    <img src="/assets/img/{{post.data.cover}}.jpg" alt="{{post.data.releasetitle}} cover art" class="pb-4 img-cover">
+    <img src="/assets/img/{{post.data.thumb}}.jpg" alt="{{post.data.releasetitle}} cover art" class="pb-4 img-cover">
     {% endif %}
     <time datetime="{{ post.date | postDate }}">{{ post.date | postDate }}</time>
     <div class="text-2xl font-bold">{{ post.data.artist }}</div>

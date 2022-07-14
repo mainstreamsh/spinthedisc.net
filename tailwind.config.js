@@ -10,10 +10,12 @@ module.exports = {
       'serif': ['Segoe UI', 'Helvetica', 'Arial']
     },
     screens: {
+      'xs': '620px',
       'sm': '840px',
       'md': '960px',
       'lg': '1024px',
-      'xl': '1440px'
+      'xl': '1080px',
+      '2xl': '1600px'
     },
     typography: {
       default: {

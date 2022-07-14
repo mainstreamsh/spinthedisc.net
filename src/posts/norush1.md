@@ -4,7 +4,8 @@ artist: No Rush
 releasetitle: Intense Depictions of Very Bad Weather
 date: 2015-09-25
 excerpt: Funky futurebass
-cover: norush1
+cover: /posts/norush1/norush1
+thumb: /posts/norush1/norush1-thumb
 tags:
 - EP
 - Future Bass

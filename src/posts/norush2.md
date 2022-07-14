@@ -4,7 +4,8 @@ artist: No Rush
 releasetitle: Holding Patterns
 date: 2018-01-15
 excerpt: Deep and moody futurebass
-cover: norush2
+cover: /posts/norush2/norush2
+thumb: /posts/norush2/norush2-thumb
 tags:
 - EP
 - Future Bass

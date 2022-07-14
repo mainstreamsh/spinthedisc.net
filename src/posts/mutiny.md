@@ -4,7 +4,8 @@ artist: Pompeius
 releasetitle: Mutiny
 date: 2015-03-09
 excerpt: A collection of four water-logged songs.
-cover: mutiny
+cover: /posts/mutiny/mutiny
+thumb: /posts/mutiny/mutiny-thumb
 tags:
 - EP
 - Downtempo
