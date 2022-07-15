@@ -51,9 +51,8 @@ module.exports = function(eleventyConfig) {
   return {
     dir: {
       "input": "src",
-      "output": "build"
+      "output": "_site"
     },
-    htmlTemplateEngine: "njk",
-    markdownTemplateEngine: "njk"
+    htmlTemplateEngine: "njk"
   }
 }
