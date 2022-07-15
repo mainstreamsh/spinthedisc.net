@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   darkMode: 'class',
   content: ['./src/**/*.md', './src/**/*.html', './src/_includes/**/*.njk', './src/index.njk'],
@@ -8,6 +10,16 @@ module.exports = {
     fontFamily: {
       'mono': ['supply', 'Segoe UI', 'Arial'],
       'serif': ['Segoe UI', 'Helvetica', 'Arial']
+    },
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      black: colors.black,
+      white: colors.white,
+      grey: '#2e2e2e',
+      primary: '#5c6ac4',
+      secondary: '#ecc94b',
+      tertiary: '#61a077'
     },
     screens: {
       'xs': '620px',
